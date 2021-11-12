@@ -56,8 +56,6 @@ export class Pagina1Component implements OnInit, OnChanges, DoCheck,
     console.log('Disparo el: ngOnChanges')
   }
 
-  guardar(){
-
-  }
+  guardar(){}
 
 }
