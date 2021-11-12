@@ -18,16 +18,14 @@ export class Pagina1Component implements OnInit, OnChanges, DoCheck,
                                         AfterContentInit, AfterContentChecked,
                                       AfterViewInit, AfterViewChecked, OnDestroy{
 
+  nombre: string = 'Fabio Aoad';
+
   constructor() {
     console.log('Disparo el: constructor');
   }
 
   ngOnInit(): void {
     console.log('Disparo el: ngOnInit');
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('Disparo el: ngOnChanges')
   }
 
   ngAfterContentChecked(): void {
@@ -52,6 +50,14 @@ export class Pagina1Component implements OnInit, OnChanges, DoCheck,
 
   ngOnDestroy(): void {
     console.log('Disparo el: ngOnDestroy')
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('Disparo el: ngOnChanges')
+  }
+
+  guardar(){
+
   }
 
 }
